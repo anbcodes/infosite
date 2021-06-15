@@ -175,9 +175,9 @@
 
 <p>
 	Hello! I am a 14 year old computer programmer. I know how to program in HTML, CSS, Javascript, and
-	Typescript. I've used Svelte and Vuejs for creating websites (This site is made with sveltekit).
+	Typescript. I've used Svelte and Vuejs for creating websites (This site is made with SvelteKit).
 	I'm not as good at C/C++ and Python, but I've written programs with them. I've also experimented
-	with Java, Rust, and Haskell, but I would not really be able to write a program with them.
+	with Java, Rust, and Haskell, but I would not really be able to use them to write a program.
 </p>
 <p>
 	I also have some experience with cybersecuity. I've done <a

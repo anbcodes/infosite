@@ -10,9 +10,14 @@
 			</div>
 			<div class="flex-grow" />
 			<div class="flex">
-				<a href="/" class="text-warmGray-500 p-5 visited:text-gray-500">Home</a>
-				<a href="https://github.com/anbcodes" class="text-warmGray-500 p-5 visited:text-gray-500"
-					>Github</a
+				<a href="/" class="text-warmGray-500 p-5 visited:text-warmGray-500">Home</a>
+				<a
+					href="https://github.com/anbcodes"
+					class="text-warmGray-500 p-5 visited:text-warmGray-500">Github</a
+				>
+				<a
+					href="mailto:anbcodes@protonmail.com"
+					class="text-warmGray-500 p-5 visited:text-warmGray-500">anbcodes@protonmail.com</a
 				>
 			</div>
 		</div>
