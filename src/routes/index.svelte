@@ -195,7 +195,7 @@
 <div class="my-5 border-warmGray-400 rounded border">
 	{#each projects as project, i}
 		<!-- <a href="/projects/{project.moreInfo}" class="hover:no-underline"> -->
-		<div class="p-4 text-warmGray-300 border-t" class:border-t={i !== 0}>
+		<div class="p-4 text-warmGray-300 border-t border-warmGray-400" class:border-t={i !== 0}>
 			<div class="text-xl flex">
 				<div>{project.name}</div>
 				<div class="flex-grow" />
