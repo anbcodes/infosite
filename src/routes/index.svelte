@@ -36,7 +36,7 @@
 		},
 		{
 			name: 'Lesson Planner',
-			link: 'https://lessonplanner.anb.codes',
+			link: 'https://lesson-planner.anb.codes',
 			moreInfo: 'lesson-planner',
 			description:
 				'This tool is pretty much a copy of the School Planner but for teachers (For my homeschool group)',
@@ -70,7 +70,7 @@
 			moreInfo: 'latin-board',
 			description:
 				'Latin Board generates a 6x6 grid of latin vocabulary which you can use to review vocabulary',
-			year: 'unknown'
+			year: '2018'
 		}
 	];
 </script>
