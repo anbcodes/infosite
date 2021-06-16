@@ -9,7 +9,7 @@
 				<slot />
 			</div>
 			<div class="flex-grow" />
-			<div class="flex">
+			<div class="flex flex-wrap">
 				<a href="/" class="text-warmGray-500 p-5 visited:text-warmGray-500">Home</a>
 				<a
 					href="https://github.com/anbcodes"

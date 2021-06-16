@@ -54,7 +54,7 @@
 	}
 </script>
 
-<div class="header">Made With</div>
+<div class="header pt-3">Made With</div>
 <div class="justify-center flex items-center">
 	<div class="text-center w-full md:w-2/3 lg:w-1/2">
 		{#each items.slice(0, -1) as item}
