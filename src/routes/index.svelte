@@ -1,6 +1,7 @@
 <script>
 	import OpenInNew from 'svelte-material-icons/OpenInNew.svelte';
 	import Github from 'svelte-material-icons/GithubCircle.svelte';
+	import ProjectList from '../components/ProjectList.svelte';
 	const projects = [
 		{
 			name: 'anb.codes',
@@ -174,10 +175,10 @@
 <div class="header">About Me</div>
 
 <p>
-	Hello! I am a 14 year old computer programmer. I know how to program in HTML, CSS, Javascript, and
-	Typescript. I've used Svelte and Vuejs for creating websites (This site is made with SvelteKit).
-	I'm not as good at C/C++ and Python, but I've written programs with them. I've also experimented
-	with Java, Rust, and Haskell, but I would not really be able to use them to write a program.
+	Hello! I am a computer programmer. I know how to program in HTML, CSS, Javascript, and Typescript.
+	I've used Svelte and Vuejs for creating websites (This site is made with SvelteKit). I'm not as
+	good at C/C++ and Python, but I've written programs with them. I've also experimented with Java,
+	Rust, and Haskell, but I would not really be able to use them to write a program.
 </p>
 <p>
 	I also have some experience with cybersecuity. I've done <a
@@ -189,12 +190,21 @@
 		>21st</a
 	>.
 </p>
+<!-- 
+<div class="header">Business</div>
+<p>I am a web contractor. Contact me for more information at anbcodes@protonmail.com</p>
+<div class="header">Business Projects</div>
 
-<div class="header">Projects</div>
+<p>I have yet to create a project as a web contractor</p> -->
 
+<div class="header">Personal Projects</div>
+{#each [...new Set(projects.map((v) => v.year))] as year}
+	<div class="text-center text-sm">{year}</div>
+	<ProjectList projects={projects.filter((v) => v.year === year)} />
+{/each}
+<!-- 
 <div class="my-5 border-warmGray-400 rounded border">
 	{#each projects as project, i}
-		<!-- <a href="/projects/{project.moreInfo}" class="hover:no-underline"> -->
 		<div class="p-4 text-warmGray-300 border-t border-warmGray-400" class:border-t={i !== 0}>
 			<div class="text-xl flex">
 				<div>{project.name}</div>
@@ -225,6 +235,5 @@
 			</div>
 			<div class="text-sm text-right text-warmGray-400 w-full">{project.year}</div>
 		</div>
-		<!-- </a> -->
 	{/each}
-</div>
+</div> -->
