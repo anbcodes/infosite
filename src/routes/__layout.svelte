@@ -16,7 +16,7 @@
 				<a href="mailto:anbcodes@protonmail.com" class="darklink">anbcodes@protonmail.com</a>
 				<a href="/privacy" class="darklink">Privacy Policy</a>
 				<a href="/tos" class="darklink">Terms of Service</a>
-				<a href="/disclamier" class="darklink">Disclaimer</a>
+				<a href="/disclaimer" class="darklink">Disclaimer</a>
 			</div>
 		</div>
 	</div>
