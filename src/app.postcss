@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-black text-warmGray-100 h-full;
+  @apply bg-black text-warmGray-300 h-full;
 }
 
 html {
@@ -19,18 +19,44 @@ p {
   @apply text-warmGray-300 pb-3;
 }
 
-.header {
-  @apply text-center border-b border-warmGray-400 mb-3;
+@layer utilities {
+  .header-c {
+    @apply text-center header;
+  }
+  .header {
+    @apply border-b border-warmGray-400 mb-3 pb-1;
+  }
 }
+
 
 .text-right {
   @apply text-right;
 }
 
 .darklink {
-  @apply text-warmGray-500 visited:text-warmGray-500 pr-2;
+  @apply text-warmGray-500 visited:text-warmGray-500 pr-3;
 }
 
 .links {
-  @apply flex flex-wrap
+  @apply flex flex-wrap;
+}
+
+h1 {
+  @apply header-c text-xl;
+}
+
+h2 {
+  @apply header-c text-lg;
+}
+
+h3 {
+  @apply header text-left;
+}
+
+ul {
+  @apply list-disc pl-10 pb-3;
+}
+
+ol {
+  @apply list-decimal pl-10 pb-3;
 }

@@ -172,7 +172,7 @@
 	];
 </script>
 
-<div class="header">About Me</div>
+<div class="header-c">About Me</div>
 
 <p>
 	Hello! I am a computer programmer. I know how to program in HTML, CSS, Javascript, and Typescript.
@@ -190,6 +190,15 @@
 		>21st</a
 	>.
 </p>
+<p>
+	I'm also currently looking for web development contract work. I can create responsive websites,
+	simple web apps, or prototypes. Contact me for more information.
+</p>
+<p>
+	<a href="https://www.linkedin.com/in/andrew-baumes-36242a216/" class="darklink">Linkedin</a>
+	<a href="https://github.com/anbcodes" class="darklink">Github</a>
+	<a href="mailto:anbcodes@protonmail.com" class="darklink">anbcodes@protonmail.com</a>
+</p>
 <!-- 
 <div class="header">Business</div>
 <p>I am a web contractor. Contact me for more information at anbcodes@protonmail.com</p>
@@ -197,7 +206,7 @@
 
 <p>I have yet to create a project as a web contractor</p> -->
 
-<div class="header">Personal Projects</div>
+<div class="header-c">Personal Projects</div>
 {#each [...new Set(projects.map((v) => v.year))] as year}
 	<div class="text-center text-sm">{year}</div>
 	<ProjectList projects={projects.filter((v) => v.year === year)} />

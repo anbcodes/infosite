@@ -9,16 +9,14 @@
 				<slot />
 			</div>
 			<div class="flex-grow" />
-			<div class="flex flex-wrap">
-				<a href="/" class="text-warmGray-500 p-5 visited:text-warmGray-500">Home</a>
-				<a
-					href="https://github.com/anbcodes"
-					class="text-warmGray-500 p-5 visited:text-warmGray-500">Github</a
-				>
-				<a
-					href="mailto:anbcodes@protonmail.com"
-					class="text-warmGray-500 p-5 visited:text-warmGray-500">anbcodes@protonmail.com</a
-				>
+			<div class="flex flex-wrap py-5">
+				<a href="/" class="darklink">Home</a>
+				<a href="https://github.com/anbcodes" class="darklink">Github</a>
+				<a href="https://www.linkedin.com/in/andrew-baumes-36242a216/" class="darklink">LinkedIn</a>
+				<a href="mailto:anbcodes@protonmail.com" class="darklink">anbcodes@protonmail.com</a>
+				<a href="/privacy" class="darklink">Privacy Policy</a>
+				<a href="/tos" class="darklink">Terms of Service</a>
+				<a href="/disclamier" class="darklink">Disclaimer</a>
 			</div>
 		</div>
 	</div>
