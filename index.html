@@ -8,19 +8,28 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-F8ES57HPPX"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-F8ES57HPPX');
+	</script>
 	
 
 		
 
-		<link rel="modulepreload" href="/./_app/start-772e5225.js">
+		<link rel="modulepreload" href="/./_app/start-c34527d6.js">
 		<link rel="modulepreload" href="/./_app/chunks/vendor-095e6bc9.js">
-		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-7225f30c.js">
-		<link rel="modulepreload" href="/./_app/pages/index.svelte-81ef760e.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-9e64049e.js">
+		<link rel="modulepreload" href="/./_app/pages/index.svelte-df7987b1.js">
 		<link rel="stylesheet" href="/./_app/assets/start-0826e215.css">
-		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-56d0beb6.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-a08a2c80.css">
 
 		<script type="module">
-			import { start } from "/./_app/start-772e5225.js";
+			import { start } from "/./_app/start-c34527d6.js";
 			start({
 				target: document.querySelector("body"),
 				paths: {"base":"","assets":"/."},
@@ -33,8 +42,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/./_app/pages/__layout.svelte-7225f30c.js"),
-						import("/./_app/pages/index.svelte-81ef760e.js")
+						import("/./_app/pages/__layout.svelte-9e64049e.js"),
+						import("/./_app/pages/index.svelte-df7987b1.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -51,7 +60,7 @@
 	
 
 
-<main class="w-full p-10 h-full"><div class="flex justify-center w-full h-full"><div class="w-full md:w-2/3 lg:w-1/2 h-full flex flex-col"><div><div class="header">About Me</div>
+<main class="w-full p-10 h-full"><div class="flex justify-center w-full h-full"><div class="w-full md:w-2/3 lg:w-1/2 h-full flex flex-col"><div><div class="header-c">About Me</div>
 
 <p>Hello! I am a computer programmer. I know how to program in HTML, CSS, Javascript, and Typescript.
 	I&#39;ve used Svelte and Vuejs for creating websites (This site is made with SvelteKit). I&#39;m not as
@@ -62,9 +71,15 @@
 	and participated in the 2021 National Cyber Scholarship Competition, in which I scored
 	<a href="https://leaderboard.tomahawque.com/943e22be-870a-11eb-8e55-636337383761/359e5c0b1998ff3e19014cb3b9239f64/">21st</a>.
 </p>
+<p>I&#39;m also currently looking for web development contract work. I can create responsive websites,
+	simple web apps, or prototypes. Contact me for more information.
+</p>
+<p><a href="https://www.linkedin.com/in/andrew-baumes-36242a216/" class="darklink">Linkedin</a>
+	<a href="https://github.com/anbcodes" class="darklink">Github</a>
+	<a href="mailto:anbcodes@protonmail.com" class="darklink">anbcodes@protonmail.com</a></p>
 
 
-<div class="header">Personal Projects</div>
+<div class="header-c">Personal Projects</div>
 <div class="text-center text-sm">2021</div>
 	<div class="my-3 border-warmGray-400 rounded border">
 <div class="p-4 text-warmGray-300 border-t border-warmGray-400"><div class="text-xl flex"><div>anb.codes</div>
@@ -243,9 +258,13 @@
 </div>
 </div>
 	<div class="flex-grow"></div>
-	<div class="flex flex-wrap"><a href="/" class="text-warmGray-500 p-5 visited:text-warmGray-500">Home</a>
-		<a href="https://github.com/anbcodes" class="text-warmGray-500 p-5 visited:text-warmGray-500">Github</a>
-		<a href="mailto:anbcodes@protonmail.com" class="text-warmGray-500 p-5 visited:text-warmGray-500">anbcodes@protonmail.com</a></div></div></div></main>
+	<div class="flex flex-wrap py-5"><a href="/" class="darklink">Home</a>
+		<a href="https://github.com/anbcodes" class="darklink">Github</a>
+		<a href="https://www.linkedin.com/in/andrew-baumes-36242a216/" class="darklink">LinkedIn</a>
+		<a href="mailto:anbcodes@protonmail.com" class="darklink">anbcodes@protonmail.com</a>
+		<a href="/privacy" class="darklink">Privacy Policy</a>
+		<a href="/tos" class="darklink">Terms of Service</a>
+		<a href="/disclaimer" class="darklink">Disclaimer</a></div></div></div></main>
 
 
 
