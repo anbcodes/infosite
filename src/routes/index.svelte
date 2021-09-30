@@ -38,8 +38,7 @@
 		},
 		{
 			name: 'How The Market Works ad hider',
-			link:
-				'https://chrome.google.com/webstore/detail/htmw-ad-hider/boefgankmlgmcmebohglelhngipmmckm',
+			link: 'https://chrome.google.com/webstore/detail/htmw-ad-hider/boefgankmlgmcmebohglelhngipmmckm',
 			moreInfo: 'htmw-ad-hider',
 			description:
 				'HTMW had a lot of ads and my ad blocker was not really working so I made my own extension',
@@ -199,50 +198,9 @@
 	<a href="https://github.com/anbcodes" class="darklink">Github</a>
 	<a href="mailto:anbcodes@protonmail.com" class="darklink">anbcodes@protonmail.com</a>
 </p>
-<!-- 
-<div class="header">Business</div>
-<p>I am a web contractor. Contact me for more information at anbcodes@protonmail.com</p>
-<div class="header">Business Projects</div>
-
-<p>I have yet to create a project as a web contractor</p> -->
 
 <div class="header-c">Personal Projects</div>
 {#each [...new Set(projects.map((v) => v.year))] as year}
 	<div class="text-center text-sm">{year}</div>
 	<ProjectList projects={projects.filter((v) => v.year === year)} />
 {/each}
-<!-- 
-<div class="my-5 border-warmGray-400 rounded border">
-	{#each projects as project, i}
-		<div class="p-4 text-warmGray-300 border-t border-warmGray-400" class:border-t={i !== 0}>
-			<div class="text-xl flex">
-				<div>{project.name}</div>
-				<div class="flex-grow" />
-				{#if project.codeLink}
-					<a
-						class="rounded-full flex justify-center items-center text-white visited:text-gray-100"
-						href={project.codeLink}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<Github size="1.5rem" />
-					</a>
-				{/if}
-				{#if project.link}
-					<a
-						class="rounded-full p-2 flex justify-center items-center hover:bg-gray-900 text-white visited:text-gray-100"
-						href={project.link}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<OpenInNew />
-					</a>
-				{/if}
-			</div>
-			<div class="text-warmGray-400">
-				{project.description}
-			</div>
-			<div class="text-sm text-right text-warmGray-400 w-full">{project.year}</div>
-		</div>
-	{/each}
-</div> -->
