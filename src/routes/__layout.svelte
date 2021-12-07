@@ -2,7 +2,7 @@
 	import '../app.postcss';
 </script>
 
-<main class="w-full p-10 h-full">
+<main class="w-full p-5 sm:p-10 h-full">
 	<div class="flex justify-center w-full h-full">
 		<div class="w-full md:w-2/3 lg:w-1/2 h-full flex flex-col">
 			<div>
