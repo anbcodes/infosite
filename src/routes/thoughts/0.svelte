@@ -12,15 +12,15 @@
 	This was the beginning of a new season of change and renewal in my life.
 </p>
 <p>
-	At the end of 2020, I was looking for a change. We had been visiting churches, and we thought that
-	we had found one that we liked, but we were not getting connected, and we had reached stagnation.
-	In the beginning of December, I tried a new youth group. At the time, I had only a few friends
+	At the end of 2020, I was looking for a change. We had been visiting churches, and we thought we
+	had found one that we liked, but we were not getting connected, and we had reached stagnation. In
+	the beginning of December, I tried a new youth group. At the time, I had only a few friends
 	outside of the youth group, and I didn’t really know all of them. Determined to make new friends,
-	I forced myself to go to a youth group and to try to get connected. The only problem was that I
-	was not outgoing and would never go up to someone and introduce myself. So I just stood around and
-	did not know what to do. This lasted until a senior pulled me into the youth group. During the
-	first month or so, he would come over and talk to me. It gave me a way into the youth group, and
-	it was a big reason why I’ve gotten to where I am now.
+	I forced myself to go to a youth group, and I forced myself to try to get connected. The only
+	problem was that I was not outgoing and would never go up to someone and introduce myself. So I
+	just stood around and didn't know what to do. This lasted until a senior pulled me into the youth
+	group. During the first month or so, he would come over and talk to me. It gave me a way into the
+	youth group, and it was a big reason why I’ve gotten to where I am now.
 </p>
 <p>
 	The first big thing that I did with the youth group was the winter retreat in February. Because of
@@ -32,45 +32,52 @@
 <p>
 	From then until August, I continued to go to the youth group, barely missing a week, and life
 	groups started up, which were another good way for me to get connected. Sadly the youth group
-	stopped during the summer but the life groups continued. As soon as registration for the local
+	stopped during the summer, but the life groups continued. As soon as registration for the local
 	missions trip opened, I was ready to register, and I’m glad I did. It was the next big thing in my
 	growth at the youth group.
 </p>
 <p>
-	The missions trip was big. It was also the farthest out of my comfort zone that I had ever gone.
-	During it, all the high school boys stayed overnight at one person's house. I still didn’t really
-	know people all that well, and it was a little stressful figuring everything out. It was only
-	three days long, but a lot of stuff happened. It was hard work but pretty much the best week ever.
+	The missions trip was big. It was the farthest out of my comfort zone that I had ever gone. It was
+	a three-day event for middle and high schoolers hosted by our church. We were split into groups
+	and assigned places to serve each day. The groups served at VBS, a housing authority, around the
+	church, etc. The event involved multiple churches, but we only saw the other churches at some
+	evening events, and we didn't work with them in our groups.
 </p>
 <p>
-	We were each assigned to our own group. For some reason I was placed in the “doing random stuff”
+	During the missions trip, all the high school boys stayed overnight at someone's house. I still
+	didn’t really know people all that well, and it was a little stressful to figure everything out.
+	It was only three days long, but a lot of stuff happened. It was hard work but pretty much the
+	best three days ever.
+</p>
+<p>
+	We were each assigned to our own group. For some reason, I was placed in the “doing random stuff”
 	group. We pretty much just went and did random different things to help. For the first and second
 	days, we weeded and spread mulch. On the third day, we helped paint at a private school, and we
 	helped a little around the church. On two of the days, I also helped with a Camp of Champions that
 	we ran at a housing authority.
 </p>
 <p>
-	On the second night, the end of the week celebration was held at one of the churches participating
-	(most of the churches end the missions trip one day early, so we still had another day). It was
-	fun and cool to see so many people participating in it together, and celebrating together.
+	On the second night, one of the churches participating held the end of the missions trip
+	celebration (most of the churches end it one day early, so we still had another day). It was fun
+	and cool to see so many people participating in it together and celebrating together.
 </p>
 <p>
-	At the end of the local missions trip, everyone said goodbye to the seniors, as they were going
-	off to college. They were the leaders and the examples in the youth group. Everyone was really
-	really sad to see them go, but multiple younger people in the youth group were ready to step up,
-	and in the weeks/months since I have seen many people step up to serve and lead.
+	At the end of the local missions trip, everyone said goodbye to the seniors as they were going off
+	to college. They were the leaders and the examples in the youth group. Everyone was really really
+	sad to see them go, but multiple younger people in the youth group were ready to step up, and in
+	the weeks/months since, I have seen many people step up to serve and lead.
 </p>
 <p>
-	After the trip, everything felt like it went back to normal. Also I will note that through most of
-	the year, it never felt like much was happening, progress felt slow, and I couldn’t see what was
-	changing, or how far I had come. So much had happened though. I had become recognized in the youth
-	group, I knew all the high school boys’ names. I played games with them, I had joined the youth
-	band, and I had spent a year with the youth group. I barely recognized all this progress until the
-	exact one year mark since the first week I had gone to the youth group.
+	After the trip, everything felt like it went back to normal. Also, I will note that through most
+	of the year, it never felt like much was happening, progress felt slow, and I couldn’t see what
+	was changing, or how far I had come. So much had happened though. I had become recognized in the
+	youth group, I knew all the high school boys’ names. I played games with them, I had joined the
+	youth band, and I had spent a year with the youth group. I barely recognized all this progress
+	until the exact one-year mark since the first week I had gone to the youth group.
 </p>
 <p>
-	That week reminded me where I used to be, of the changes, and of the progress I had made. On
-	Tuesday of that week, we learned that they had reimplemented masks at the youth group, and they
+	That week reminded me where I used to be, of the changes, and of the progress, which I had made.
+	On Tuesday of that week, we learned that they had reimplemented masks at the youth group, and they
 	also moved back into the sanctuary (similar to how it had been when I started youth group). On
 	Wednesday, I walked in and just stood in the middle of the room. It felt like I was looking back
 	in time, everything looked as it did the first week I had been there, but I had changed.
