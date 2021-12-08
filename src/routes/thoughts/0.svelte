@@ -90,6 +90,35 @@
 </p>
 <p>I had changed. 2021 was a year of renewal of hope and of new beginnings in my life.</p>
 
+<p class="pt-5 text-gray-400" xmlns:cc="http://creativecommons.org/ns#">
+	<a class="darklink-nopad" rel="cc:attributionURL" href="https://anb.codes/thoughts/0">This work</a
+	>
+	by
+	<a
+		class="darklink-nopad"
+		rel="cc:attributionURL dct:creator"
+		property="cc:attributionName"
+		href="https://anb.codes">anbcodes</a
+	>
+	is licensed under
+	<a
+		class="darklink-nopad"
+		href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1"
+		target="_blank"
+		rel="license noopener noreferrer"
+		style="display:inline-flex;"
+		>CC BY 4.0<img
+			style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+			src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+			alt="cc by"
+		/><img
+			style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+			src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+			alt="cc by"
+		/></a
+	>
+</p>
+
 <style>
 	p {
 		@apply leading-10;
