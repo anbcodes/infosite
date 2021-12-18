@@ -12,6 +12,14 @@
 			codeLink: 'https://github.com/anbcodes/infosite/'
 		},
 		{
+			name: 'Thoughts',
+			link: 'https://anb.codes/thoughts',
+			moreInfo: 'anbcodes-site',
+			description: 'Thoughts is the place where I write.',
+			year: '2021',
+			codeLink: 'https://github.com/anbcodes/infosite/'
+		},
+		{
 			name: 'LED Light Strip Controller',
 			link: null,
 			moreInfo: 'led-light-strips',
@@ -193,6 +201,10 @@
 	I'm also currently looking for web development contract work. I can create responsive websites,
 	simple web apps, or prototypes. Contact me for more information.
 </p>
+<p>
+	Lastly, I also write about random things <a href="/thoughts">here</a>
+</p>
+
 <p>
 	<a href="https://www.linkedin.com/in/andrew-baumes-36242a216/" class="darklink">Linkedin</a>
 	<a href="https://github.com/anbcodes" class="darklink">Github</a>

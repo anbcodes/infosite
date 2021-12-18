@@ -1,14 +1,7 @@
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
 
 module.exports = {
-	mode: "jit",
-	purge: [
-		"./src/**/*.{html,js,svelte,ts}",
-	],
-	theme: {
-		extend: {
-			colors
-		},
-	},
+
 	plugins: [],
+	content: ['./src/**/*.{html,js,svelte,ts}']
 };
