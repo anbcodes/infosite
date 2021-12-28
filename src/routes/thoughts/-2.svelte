@@ -10,7 +10,7 @@
 <p>
 	There are currently no comments. If you have a response or thought about this post (or about another
 	comment), email it to me <a href="mailto:anbcodes@protonmail.com">anbcodes@protonmail.com</a> and I
-	will consider adding it as a comment
+	will consider adding it as a comment.
 </p>
 
 <p class="pt-5 text-gray-400" xmlns:cc="http://creativecommons.org/ns#">
