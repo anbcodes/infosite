@@ -62,8 +62,8 @@
 <p class="mt-5">Comments</p>
 <p>
 	There are currently no comments. If you have a response, comment, or thought about this post (or about
-	another comment), email it to me at <a href="mailto:anbcodes@protonmail.com"
-		>anbcodes@protonmail.com</a
+	another comment), email it to me at <a href="mailto:me@anb.codes"
+		>me@anb.codes</a
 	> and I will consider adding it as a comment.
 </p>
 

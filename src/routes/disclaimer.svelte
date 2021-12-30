@@ -3,7 +3,7 @@
 
 	<p>
 		If you require any more information or have any questions about our site's disclaimer, please
-		feel free to contact us by email at anbcodes@protonmail.com
+		feel free to contact us by email at me@anb.codes
 	</p>
 
 	<h2>Disclaimers for anbcodes</h2>

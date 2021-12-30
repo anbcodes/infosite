@@ -17,7 +17,7 @@
 					<a href="https://www.linkedin.com/in/andrew-baumes-36242a216/" class="darklink"
 						>LinkedIn</a
 					>
-					<a href="mailto:anbcodes@protonmail.com" class="darklink">anbcodes@protonmail.com</a>
+					<a href="mailto:me@anb.codes" class="darklink">me@anb.codes</a>
 					<a href="/privacy" class="darklink">Privacy Policy</a>
 					<a href="/tos" class="darklink">Terms of Service</a>
 					<a href="/disclaimer" class="darklink">Disclaimer</a>
