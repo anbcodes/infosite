@@ -31,6 +31,16 @@
 		peers should not often be trusted unless you go back to the original source.
 	</p>
 	<p>
+		To clarify, I am not saying that all your friends are untrustworthy. In the previous paragraph,
+		I was talking about facts, but we often get advice from our friends, not just facts. If you
+		trust your friends to give you sound advice, take it, your friends should be trustworthy in that
+		sense, but if your friends are telling you facts, it could be wise to check their sources as
+		they are generally not experts on that subject. There is also a gray area between advice and
+		facts. For example, if someone bases their advice on facts you find to be untrue, you probably
+		shouldn't take their advice. Overall, your peers can be great a giving you advice, but it is a
+		good idea to check their sources when they tell you facts.
+	</p>
+	<p>
 		Lastly, all authorities should be fact-checked. Always look for more sources saying the same
 		thing, and if you find a source saying a different thing, don't dismiss it, even if it looks
 		like it comes from a source you don't agree with, instead determine if they have reasons and if
