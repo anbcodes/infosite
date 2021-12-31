@@ -1,20 +1,19 @@
 <script lang="ts">
-import { thoughts } from "../routes/thoughts/thoughts";
+	import { thoughts } from '../routes/thoughts/thoughts';
 
-
-	export let id: string = "-1";
-    let date: string = thoughts.find(v => v.id === id).date;
-    let title: string = thoughts.find(v => v.id === id).title;
+	export let id: string = '-1';
+	let date: string = thoughts.find((v) => v.id === id).date;
+	let title: string = thoughts.find((v) => v.id === id).title;
 </script>
 
 <svelte:head>
 	<title>{title}</title>
 </svelte:head>
 
-<div class="header-c">{title}</div>
+<h1>{title}</h1>
 <div class="text-stone-500 pb-2">{date}</div>
 
-<slot></slot>
+<slot />
 
 <p><a href="/thoughts" class="darklink">View more of my thoughts</a></p>
 

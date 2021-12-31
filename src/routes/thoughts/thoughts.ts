@@ -1,5 +1,11 @@
 export const thoughts = [
     {
+        date: 'Unknown',
+        title: 'Setting Up a Home Server on a Raspberry Pi',
+        hidden: true,
+        id: '4',
+    },
+    {
         date: 'Decemeber 30th, 2021',
         title: 'On Trust',
         id: '3',
@@ -16,7 +22,7 @@ export const thoughts = [
     },
     {
         date: 'Decemeber 4th, 2021',
-        title: '2021: A Year of Renewal And New Beginnings',
+        title: '2021: A Year of Renewal and New Beginnings',
         id: '0',
     },
 ]

@@ -14,7 +14,7 @@
 </p>
 
 <div>
-	{#each thoughts as thought}
+	{#each thoughts.filter(v => !v.hidden) as thought}
 		<div class="flex">
 			<div class="mr-4 text-stone-500">{thought.id}.</div>
 			<a class="darklink" href="/thoughts/{thought.id}">{thought.title}</a>
