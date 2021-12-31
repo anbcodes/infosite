@@ -9,7 +9,7 @@
 			moreInfo: 'anbcodes-site',
 			description: 'anb.codes is this website which was made with Sveltekit and Tailwindcss.',
 			year: '2021',
-			codeLink: 'https://github.com/anbcodes/infosite/'
+			codeLink: 'https://git.anb.codes/anbcodes/website/'
 		},
 		{
 			name: 'Thoughts',
@@ -178,6 +178,10 @@
 		}
 	];
 </script>
+
+<svelte:head>
+	<title>Anb.codes</title>
+</svelte:head>
 
 <div class="header-c">About Me</div>
 

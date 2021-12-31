@@ -2,7 +2,7 @@
 	import Article from '../../components/Article.svelte';
 </script>
 
-<Article title="Covid-19 and Faith">
+<Article id="2">
 	<p>
 		“You intended to harm me, but God intended it for good to accomplish what is now being done, the
 		saving of many lives.” Genesis 50:20 NIV. Covid was bad, but God has used it to bring about good

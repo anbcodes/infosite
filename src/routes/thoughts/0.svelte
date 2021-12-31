@@ -2,7 +2,7 @@
 	import Article from '../../components/Article.svelte';
 </script>
 
-<Article title="2021: A Year of Renewal And New Beginnings">
+<Article id="0">
 	<p>
 		It was December of 2020. I was standing in a new place. Christmas music was playing in the
 		background. It was a place I didn’t really want to be. I was uncomfortable and alone. I was

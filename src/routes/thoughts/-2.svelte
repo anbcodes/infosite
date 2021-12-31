@@ -2,7 +2,7 @@
 	import Article from '../../components/Article.svelte';
 </script>
 
-<Article title="Template">
+<Article id="-1">
 	<p>Template content</p>
 </Article>
 

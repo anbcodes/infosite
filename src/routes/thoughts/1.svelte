@@ -2,7 +2,7 @@
 	import Article from '../../components/Article.svelte';
 </script>
 
-<Article title="Observations About Stages of Learning">
+<Article id="1">
 	<p>
 		The following is a observation I had about the three stages of learning, which I call the
 		grammar stage, the dialectic stage, and the rhetoric stage. All three together make up the <a

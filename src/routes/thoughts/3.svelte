@@ -2,7 +2,7 @@
 	import Article from '../../components/Article.svelte';
 </script>
 
-<Article title="On Trust">
+<Article id="3">
 	<p>
 		Who should you trust and why? We live in a complex world, full of competing authorities and
 		ideas. Many people, both kids and adults, make mistakes when choosing good authorities (myself

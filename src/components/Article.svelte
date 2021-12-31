@@ -1,5 +1,10 @@
 <script lang="ts">
-	export let title: string = '';
+import { thoughts } from "../routes/thoughts/thoughts";
+
+
+	export let id: string = "-1";
+    let date: string = thoughts.find(v => v.id === id).date;
+    let title: string = thoughts.find(v => v.id === id).title;
 </script>
 
 <svelte:head>
@@ -7,6 +12,7 @@
 </svelte:head>
 
 <div class="header-c">{title}</div>
+<div class="text-stone-500 pb-2">{date}</div>
 
 <slot></slot>
 
