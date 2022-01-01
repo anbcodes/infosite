@@ -92,10 +92,10 @@ services:
 	<p>
 		Next I wanted to set up <a href="https://gitea.com/">Gitea</a>, an alternative to Github. This
 		was very simple as they have a docker image that I used. Gitea also requires a database so I
-		also used a Postgres database docker image with it. Lastly, because Gitea and the database
+		also setup a Postgres database using a docker image. Lastly, because Gitea and the database
 		should be on the same network but the database doesn't need to be on the proxy network I created
 		another network called <code>gitea</code>. The other slightly complex thing, which I will not
-		cover here as there is already documented
+		cover here, as it is already documented
 		<a href="https://docs.gitea.io/en-us/install-with-docker/#ssh-container-passthrough">here</a>,
 		is forwarding the ssh into the docker container.
 	</p>

@@ -1,6 +1,6 @@
 <script>
 	import OpenInNew from 'svelte-material-icons/OpenInNew.svelte';
-	import Github from 'svelte-material-icons/GithubCircle.svelte';
+	import Git from 'svelte-material-icons/Git.svelte';
 	export let projects = [];
 </script>
 
@@ -15,18 +15,14 @@
 					<a
 						class="rounded-full flex justify-center items-center text-white visited:text-gray-100"
 						href={project.codeLink}
-						target="_blank"
-						rel="noopener noreferrer"
 					>
-						<Github size="1.5rem" />
+						<Git size="1.5rem" />
 					</a>
 				{/if}
 				{#if project.link}
 					<a
 						class="rounded-full p-2 flex justify-center items-center hover:bg-gray-900 text-white visited:text-gray-100"
 						href={project.link}
-						target="_blank"
-						rel="noopener noreferrer"
 					>
 						<OpenInNew />
 					</a>

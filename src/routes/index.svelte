@@ -1,6 +1,4 @@
 <script>
-	import OpenInNew from 'svelte-material-icons/OpenInNew.svelte';
-	import Github from 'svelte-material-icons/GithubCircle.svelte';
 	import ProjectList from '../components/ProjectList.svelte';
 	const projects = [
 		{
@@ -9,7 +7,7 @@
 			moreInfo: 'anbcodes-site',
 			description: 'anb.codes is this website which was made with Sveltekit and Tailwindcss.',
 			year: '2021',
-			codeLink: 'https://git.anb.codes/anbcodes/website/'
+			codeLink: 'https://git.anb.codes/anbcodes/website'
 		},
 		{
 			name: 'Thoughts',
@@ -46,7 +44,8 @@
 		},
 		{
 			name: 'How The Market Works ad hider',
-			link: 'https://chrome.google.com/webstore/detail/htmw-ad-hider/boefgankmlgmcmebohglelhngipmmckm',
+			link:
+				'https://chrome.google.com/webstore/detail/htmw-ad-hider/boefgankmlgmcmebohglelhngipmmckm',
 			moreInfo: 'htmw-ad-hider',
 			description:
 				'HTMW had a lot of ads and my ad blocker was not really working so I made my own extension',
