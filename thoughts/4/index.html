@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-F8ES57HPPX"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-F8ES57HPPX');
+	</script>
+	<title>Setting Up a Home Server on a Raspberry Pi</title>
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-752e7826.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-4738865b.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-3315e2df.js">
+		<link rel="modulepreload" href="/./_app/pages/thoughts/4.svelte-a2d79155.js">
+		<link rel="modulepreload" href="/./_app/chunks/Article-5b3d48d3.js">
+		<link rel="modulepreload" href="/./_app/chunks/thoughts-14334179.js">
+		<link rel="stylesheet" href="/./_app/assets/start-f7fb3cd0.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-2d34a143.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-752e7826.js";
+			start({
+				target: document.querySelector("body"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/__layout.svelte-3315e2df.js"),
+						import("/./_app/pages/thoughts/4.svelte-a2d79155.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/thoughts/4",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+</head>
+
+<body>
+	
+
+
+<main class="w-full p-5 sm:p-10 h-full"><div class="flex justify-center w-full h-full"><div class="w-full md:w-2/3 lg:w-1/2 h-full flex flex-col"><div>
+
+<h1>Setting Up a Home Server on a Raspberry Pi</h1>
+<div class="text-stone-500 pb-2">Unknown</div>
+
+<p>I got a Raspberry Pi 4 for Christmas and I decided to setup a home server on it.</p>
+	<p>Contents</p>
+
+	<ul><li><a href="#setup">Setup</a></li>
+<li><a href="#reverse_proxy">Reverse Proxy</a></li>
+<li><a href="#gitea">Gitea</a></li>
+<li><a href="#nextcloud">Nextcloud</a></li>
+<li><a href="#static_hosting">Static hosting</a></li>
+<li><a href="#matrix">Matrix</a></li>
+<li><a href="#wrapping_up">Wrapping up</a></li></ul>
+	<h2 id="setup">Setup</h2>
+	<p>First I had to get everything setup. I started by installing Ubuntu 21.10 server on the pi. It
+took a little bit to get working, mainly because I was attempting to ssh into the wrong computer
+(not the pi). Next I got docker installed, it might have already been installed, but I ended up
+installing it with <code>snap</code> which also installs <code>docker-compose</code></p>
+	<h2 id="reverse_proxy">Reverse Proxy</h2>
+	<p>Because I was gonna be serving multiple sites from the pi, I needed to use a reverse proxy to
+forward http requests based on the domain. I also wanted it to handle https so that each app
+would not need to.
+	</p>
+	<p>I decided to use <code><a href="https://github.com/nginx-proxy/nginx-proxy">nginxproxy/nginx-proxy</a>
+</code>. It was pretty easy to setup. It basiclly allows you to add a environment variable to
+other containers called <code>VIRTUAL_HOST</code> with the domain name and it handles all the nginx
+configuration. Below is my docker compose service for the reverse proxy.
+	</p>
+	<pre>services:
+    nginx-proxy:
+    image: nginxproxy/nginx-proxy
+    labels:
+        - com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy
+    volumes:
+        - html:/usr/share/nginx/html
+        - certs:/etc/nginx/certs
+        - ./nginx/vhost:/etc/nginx/vhost.d
+        - /var/run/docker.sock:/tmp/docker.sock:ro
+    networks:
+        - proxy
+    ports:
+        - &quot;80:80&quot;
+        - &quot;443:443&quot;
+    </pre>
+	<p>I also created a network called <code>proxy</code> and two volumes called <code>html</code> and
+<code>certs</code>. I didn&#39;t use a volume to mount the <code>vhost</code> because I needed to modify
+some configuration for Nextcloud.
+	</p>
+
+	<p>That handles the reverse proxy part, but I also wanted it to handle https. Thankfully, they also
+created a companion container that allows you to specify <code>LETSENCRYPT_HOST</code> on any
+container and obtains a let&#39;s encrypt certificate. Specificly I used their container
+<code><a href="https://github.com/nginx-proxy/acme-companion">nginxproxy/acme-companion</a></code>
+with the following configuration.
+	</p>
+
+	<pre>services:
+    ...
+    acme_companion:
+        image: nginxproxy/acme-companion
+        volumes:
+            - html:/usr/share/nginx/html
+            - certs:/etc/nginx/certs
+            - ./nginx/vhost:/etc/nginx/vhost.d
+            - /var/run/docker.sock:/var/run/docker.sock:ro
+            - ./nginx/acme.sh:/etc/acme.sh
+        depends_on:
+            - nginx-proxy
+        environment:
+            - DEFAULT_EMAIL=[YOUR_EMAIL]
+    </pre>
+	<p>With that I can specify <code>VIRTUAL_HOST</code> and <code>LETSENCRYPT_HOST</code> and have everything
+just work!
+	</p>
+	<h2 id="gitea">Gitea</h2>
+	<p>Next I wanted to set up <a href="https://gitea.com/">Gitea</a>, an alternative to Github. This
+was very simple as they have a docker image that I used. Gitea also requires a database so I
+also setup a Postgres database using a docker image. Lastly, because Gitea and the database
+should be on the same network but the database doesn&#39;t need to be on the proxy network I created
+another network called <code>gitea</code>. The other slightly complex thing, which I will not
+cover here, as it is already documented
+<a href="https://docs.gitea.io/en-us/install-with-docker/#ssh-container-passthrough">here</a>,
+is forwarding the ssh into the docker container.
+	</p>
+	<p>The configuration</p>
+	<pre>networks:
+    ...
+    gitea:
+...
+services:
+    ...
+    gitea:
+        image: gitea/gitea:1.15.8
+        environment:
+            - VIRTUAL_HOST=[YOUR_DOMAIN]
+            - LETSENCRYPT_HOST=[YOUR_DOMAIN]
+            - USER_UID=1001
+            - USER_GID=1001
+            - GITEA__database__DB_TYPE=postgres
+            - GITEA__database__HOST=gitea_db:5432
+            - GITEA__database__NAME=gitea
+            - GITEA__database__USER=gitea
+            - GITEA__database__PASSWD=[DB_PASSWORD]
+            - GITEA__server__DOMAIN=[YOUR_DOMAIN]
+            - GITEA__server__SSH_DOMAIN=[YOUR_DOMAIN]
+            - GITEA__server__HTTP_PORT=80
+            - GITEA__server__ROOT_URL=https://[YOUR_DOMAIN]
+        restart: always
+        networks:
+            - proxy
+            - gitea
+        volumes:
+            - ./gitea/data:/data
+            - /home/git/.ssh/:/data/git/.ssh
+            - /etc/timezone:/etc/timezone:ro
+            - /etc/localtime:/etc/localtime:ro
+        ports:
+            - &quot;127.0.0.1:2222:22&quot;
+        expose:
+            - &quot;80&quot;
+        depends_on:
+            - gitea_db
+    </pre>
+	<h2 id="nextcloud">Nextcloud</h2>
+
+<p><a href="/thoughts" class="darklink">View more of my thoughts</a></p>
+
+<p class="mt-5">Comments</p>
+<p>There are currently no comments. If you have a response or thought about this post (or about
+	another comment), email it to me <a href="mailto:me@anb.codes">me@anb.codes</a> and I will consider
+	adding it as a comment.
+</p>
+
+<p class="pt-5 text-gray-400" xmlns:cc="http://creativecommons.org/ns#"><a class="darklink-nopad" rel="cc:attributionURL" href="https://anb.codes/thoughts/0">This work</a>
+	by
+	<a class="darklink-nopad" rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://anb.codes">anbcodes</a>
+	is licensed under
+	<a class="darklink-nopad" href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-flex;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="cc by"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="cc by"></a></p></div>
+	<div class="flex-grow"></div>
+	<div><div class="flex flex-wrap py-5"><a href="/" class="darklink">Home</a>
+			<a href="https://github.com/anbcodes" class="darklink">Github</a>
+			<a href="https://www.linkedin.com/in/andrew-baumes-36242a216/" class="darklink">LinkedIn</a>
+			<a href="mailto:me@anb.codes" class="darklink">me@anb.codes</a>
+			<a href="/privacy" class="darklink">Privacy Policy</a>
+			<a href="/tos" class="darklink">Terms of Service</a>
+			<a href="/disclaimer" class="darklink">Disclaimer</a></div></div></div></div></main>
+
+
+
+	
+
+</body>
+
+</html>
