@@ -2,6 +2,42 @@
 	import ProjectList from '../components/ProjectList.svelte';
 	const projects = [
 		{
+			name: 'Cloud Stopwatch',
+			link: 'https://cloud-watch.anb.codes',
+			description:
+				'This is a cloud stopwatch for keeping track of multiple stopwatches across devices.',
+			year: '2022',
+			codeLink: 'https://github.com/anbcodes/cloud-watch'
+		},
+		{
+			name: 'Timeline',
+			description: 'This is a project allows you to interactivly work on a timeline.',
+			year: '2022',
+			codeLink: 'https://github.com/anbcodes/timeline'
+		},
+		{
+			name: 'Gem',
+			link: 'https://deno.land/x/gem',
+			description: 'A gemini server similar to oak or koa, written in deno.',
+			year: '2022',
+			codeLink: 'https://github.com/anbcodes/gem'
+		},
+		{
+			name: 'Yoda Sightings',
+			link: 'https://yoda.anb.codes',
+			description:
+				'My family has been hiding a lego baby yoda around the house. I post the pictures of where we find him here.',
+			year: '2022',
+			codeLink: 'https://github.com/anbcodes/yoda-sightings'
+		},
+		{
+			name: 'NAND Adder',
+			link: 'https://nandadder.anb.codes',
+			description: 'A school project where I simulate a 8 bit adder using only NAND gates.',
+			year: '2022',
+			codeLink: 'https://github.com/anbcodes/nandgateslogic'
+		},
+		{
 			name: 'anb.codes',
 			link: 'https://anb.codes',
 			moreInfo: 'anbcodes-site',
