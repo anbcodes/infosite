@@ -1,6 +1,12 @@
 <script>
 	import ProjectList from '../components/ProjectList.svelte';
 	const projects = [
+        {
+            name: 'Time',
+            link: 'https://time.anb.codes',
+            description: 'A online stopwatch. (Cloud Stopwatch v2)',
+            year: '2022',
+            codeLink: 'https://github.com/anbcodes/online-stopwatch',
 		{
 			name: 'Cloud Stopwatch',
 			link: 'https://cloud-watch.anb.codes',
