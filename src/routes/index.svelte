@@ -2,6 +2,13 @@
 	import ProjectList from '../components/ProjectList.svelte';
 	const projects = [
         {
+            name: 'Simplistic Password Manager',
+            link: 'https://passwords.anb.codes',
+            description: 'A password manager (use at your own risk)',
+            year: '2022',
+            codeLink: 'https://github.com/anbcodes/simplistic-passwords',
+        },
+        {
             name: 'Time',
             link: 'https://time.anb.codes',
             description: 'A online stopwatch. (Cloud Stopwatch v2)',
